@@ -1,0 +1,24 @@
+GET http://localhost:5000/user
+
+###
+GET http://localhost:5000/user/3
+###
+POST http://localhost:5000/user
+Content-Type: application/json
+
+{
+  "username": "elan",
+  "password": "321"
+}
+
+###
+PATCH  http://localhost:5000/user/1
+Content-Type: application/json
+
+{
+  "username": "ferlanferlan updated",
+  "password": "321"
+}
+
+###
+DELETE  http://localhost:5000/user/3
